@@ -2,7 +2,7 @@
   Created by IntelliJ IDEA.
   User: wala wala
   Date: 1/2/2022
-  Time: 12:56 AM
+  Time: 4:56 AM
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -224,13 +224,13 @@
 
 <form action="" method="POST">
     <div class="container">
-        <h2>UPDATE MY PROFILE</h2>
+        <h2>UPDATE MY ACCOUNT</h2>
         <div class="row">
             <div class="col-25">
                 <label style="">USERNAME</label>
             </div>
             <div class="col-75">
-                <input type="text" name="Username" placeholder="Enter your username" value="2018682608">
+                <input type="text" name="Username" placeholder="Enter your username" value="Zaitul_Farhana00">
             </div>
         </div>
         <div class="row">
@@ -238,7 +238,7 @@
                 <label>PASSWORD</label>
             </div>
             <div class="col-75">
-                <input type="password" name="password" placeholder="Enter your password" value="0987654321">
+                <input type="password" name="password" placeholder="Enter your password" value="Farhana_0911">
             </div>
         </div>
         <div class="row">
@@ -246,7 +246,7 @@
                 <label style="">FULL NAME</label>
             </div>
             <div class="col-75">
-                <input type="text" name="FullName" placeholder="Enter your full name" value="MUHAMMAD BAKHTIAR SHAKBAN">
+                <input type="text" name="FullName" placeholder="Enter your full name" value="Zaitul Farhna Md Esa">
             </div>
         </div>
         <div class="row">
@@ -254,7 +254,7 @@
                 <label>EMAIL</label>
             </div>
             <div class="col-75">
-                <input type="text" name="email" placeholder="Enter your email" value="2021125745@student.uitm.edu.my">
+                <input type="text" name="email" placeholder="Enter your email" value="z.farhana21@gamil.com">
             </div>
         </div>
         <div class="row">
@@ -273,7 +273,7 @@
                 <label style="">AGE</label>
             </div>
             <div class="col-75">
-                <input type="text" name="age" placeholder="Enter your age" value="18">
+                <input type="text" name="age" placeholder="Enter your age" value="38">
             </div>
         </div>
         <div class="row">
@@ -281,11 +281,11 @@
                 <label style="">PHONE NUMBER</label>
             </div>
             <div class="col-75">
-                <input type="text" name="PhoneNumber" placeholder="Enter your phone number" value="0195183243">
+                <input type="text" name="PhoneNumber" placeholder="Enter your phone number" value="0114567654">
             </div>
         </div>
 
-        <button type="submit" class="button button1" name="submit" ><a href ="tenant-viewProfile.jsp">Submit</a></button><br><br>
+        <button type="submit" class="button button1" name="submit" ><a href ="#">Submit</a></button><br><br>
     </div>
 </form>
 </body>

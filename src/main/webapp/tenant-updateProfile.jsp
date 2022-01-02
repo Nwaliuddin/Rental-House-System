@@ -204,8 +204,8 @@
             <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content">
-            <a href="tenant-createProfile.jsp">CREATE PROFILE</a>
-            <a href="tenant-viewProfile.jsp"class="active">VIEW PROFILE</a>
+            <a href="tenant-createProfile.jsp">CREATE ACCOUNT</a>
+            <a href="tenant-viewProfile.jsp"class="active">VIEW ACCOUNT</a>
         </div>
     </div>
     <a href="tenant-listPayment.jsp">PAYMENT</a>
@@ -224,7 +224,7 @@
 
 <form action="" method="POST">
     <div class="container">
-        <h2>UPDATE PROFILE FORM</h2>
+        <h2>UPDATE MY PROFILE</h2>
         <div class="row">
             <div class="col-25">
                 <label style="">USERNAME</label>
@@ -262,7 +262,10 @@
                 <label style="">GENDER</label>
             </div>
             <div class="col-75">
-                <input type="text" name="Gender" placeholder="Male/Female" value="Male">
+                <input type="radio" id="male" name="Gender" placeholder="Male" value="">
+                <label for="male">MALE</label><br>
+                <input type="radio" id="female" name="Gender" placeholder="Female" value="">
+                <label for="female">FEMALE</label>
             </div>
         </div>
         <div class="row">

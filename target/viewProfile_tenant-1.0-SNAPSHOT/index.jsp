@@ -148,8 +148,8 @@
 
 <div class="column">
     <div class="container1">
-        <a href="#">
-            <h3>LECTURER</h3>
+        <a href="landlord-listHouse.jsp">
+            <h3>LANDLORD</h3>
         </a>
     </div>
 </div>
