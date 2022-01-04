@@ -11,188 +11,8 @@
 <head>
     <title>HOUSE RENTAL SYSTEM</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="tenant-updateProfile.css">
+    <link rel="stylesheet" href="landlord-updateProfile.css">
     <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
-    <style>
-        *{
-            box-sizing: border-box;
-        }
-        .navbar {
-            overflow: hidden;
-            background-color: white;
-            font-family: Verdana,sans-serif;
-        }
-
-        .navbar a {
-            float: right;
-            font-size: 16px;
-            color: black;
-            text-align: center;
-            padding: 16px 16px;
-            text-decoration: none;
-        }
-        .navbar p {
-            float: left;
-            color: black;
-        }
-        .navbar a.active {
-            background-color: #666;
-            color: white;
-        }
-
-        .dropdown {
-            float: right;
-            overflow: hidden;
-        }
-
-        .dropdown .dropbtn {
-            font-size: 16px;
-            border: none;
-            outline: none;
-            color: black;
-            padding: 16px 16px;
-            background-color: inherit;
-            font-family: Verdana,sans-serif;
-            margin: 0;
-        }
-
-        .navbar a:hover, .dropdown:hover .dropbtn {
-            background-color: pink;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-        }
-
-        .dropdown-content a {
-            float: none;
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            text-align: left;
-        }
-
-        .dropdown-content a:hover {
-            background-color: #ddd;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-
-        body {
-            /*background-image: url('img1.jpg');*/
-            background:lightblue;
-            height:auto;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            margin:auto;
-        }
-
-        .container {
-            padding: 29px;
-            border-radius: 5px;
-            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-            background-color:white;
-            max-width: 500px;
-            max-height: 1100px;
-            margin: 50px auto;
-            color:black;
-            font-family: Verdana,sans-serif;
-            font-size:15px;
-        }
-        .container h2{
-            text-align:center;
-        }
-        .container img{
-            width: 220px;
-            height: 165px;
-            top: 30px;
-            left: calc(21% - 50px);
-            margin:auto 120px;
-        }
-        .button {
-            background-color:  black;
-            border-radius: 10px;
-            border: none;
-            color: white;
-            padding: 10px 20px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 15px;
-            margin: 10px 2px;
-            cursor: pointer;
-            font-family: Verdana,sans-serif;
-            -webkit-transition-duration: 0.4s;
-            transition-duration: 0.4s;
-            float:right;
-        }
-        .button1:hover {
-            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-            background-color: green;
-            color: black;
-        }
-        a{
-            text-decoration:none;
-            color:white;
-        }
-        input[type=text], select, textarea {
-            width: 300px;
-            padding: 12px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            resize: vertical;
-            font-family: Verdana,sans-serif;
-        }
-        input[type=password], select, textarea {
-            width: 300px;
-            padding: 12px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            resize: vertical;
-            font-family: Verdana,sans-serif;
-        }
-
-        label {
-            padding: 12px 12px 12px 0;
-            display: inline-block;
-        }
-
-        .col-25 {
-            float: left;
-            width: 35%;
-            margin-top: 6px;
-        }
-
-        .col-75 {
-            float: left;
-            width:40%;
-            margin-top: 6px;
-        }
-
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-
-        @media screen and (max-width: 600px) {
-            .col-25, .col-75, input[type=submit] {
-                width: 100%;
-                margin-top: 0;
-            }
-        }
-    </style>
 </head>
 
 <body>
@@ -204,18 +24,18 @@
             <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content">
-            <a href="tenant-createProfile.jsp">CREATE ACCOUNT</a>
-            <a href="tenant-viewProfile.jsp"class="active">VIEW ACCOUNT</a>
+            <a href="landlord-createProfile.jsp">CREATE ACCOUNT</a>
+            <a href="landlord-viewProfile.jsp"class="active">VIEW ACCOUNT</a>
         </div>
     </div>
-    <a href="tenant-listPayment.jsp">PAYMENT</a>
+    <a href="#">PAYMENT</a>
     <div class="dropdown">
         <button class="dropbtn">BOOKING
             <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content">
-            <a href="tenant-createBooking.jsp">BOOKING FORM</a>
-            <a href="tenant-listBooking.jsp">LIST BOOKING</a>
+            <a href="#">BOOKING FORM</a>
+            <a href="#">LIST BOOKING</a>
         </div>
     </div>
     <a href="#" >HOME</a>

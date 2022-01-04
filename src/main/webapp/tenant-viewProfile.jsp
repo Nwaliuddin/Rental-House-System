@@ -28,16 +28,16 @@
             <a href="tenant-viewProfile.jsp"class="active">VIEW ACCOUNT</a>
         </div>
     </div>
-        <a href="tenant-listPayment.jsp">PAYMENT</a>
-        <div class="dropdown">
-            <button class="dropbtn">BOOKING
-                 <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-               <a href="tenant-createBooking.jsp">BOOKING FORM</a>
-               <a href="tenant-listBooking.jsp">LIST BOOKING</a>
-            </div>
+    <a href="tenant-listPayment.jsp">PAYMENT</a>
+    <div class="dropdown">
+        <button class="dropbtn">BOOKING
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="#">BOOKING FORM</a>
+            <a href="#">LIST BOOKING</a>
         </div>
+    </div>
     <a href="#">HOME</a>
 </div>
 
@@ -48,7 +48,7 @@
             <label>USERNAME</label>
         </div>
         <div class="col-75">
-            <label>2021125745</label>
+            <label>ZaitulFarhana00</label>
         </div>
     </div>
     <div class="row">
@@ -56,7 +56,7 @@
             <label>PASSWORD</label>
         </div>
         <div class="col-75">
-            <label>123456</label>
+            <label>Zaitul_0011</label>
         </div>
     </div>
 
@@ -65,7 +65,7 @@
             <label>FULL NAME</label>
         </div>
         <div class="col-75">
-            <label>NUR WALIUDDIN MD SHAARI</label>
+            <label>Zaitul Farhana Md Esa</label>
         </div>
     </div>
 
@@ -74,7 +74,7 @@
             <label>EMAIL</label>
         </div>
         <div class="col-75">
-            <label>nurwaliuddin0719@gmail.com</label>
+            <label>z.farhana21@gmail.com</label>
         </div>
     </div>
 
@@ -83,7 +83,7 @@
             <label>GENDER</label>
         </div>
         <div class="col-75">
-            <label>MALE</label>
+            <label>FEMALE</label>
         </div>
     </div>
 
@@ -92,7 +92,7 @@
             <label>AGE</label>
         </div>
         <div class="col-75">
-            <label>21</label>
+            <label>38</label>
         </div>
     </div>
 
@@ -101,28 +101,40 @@
             <label>PHONE NUMBER</label>
         </div>
         <div class="col-75">
-            <label>0106612401</label>
+            <label>0103211234</label>
         </div>
     </div>
 
 
     <button type="submit" onclick="myFunction(); return false" class="button button1" name="submit" ><a href="tenant-updateProfile.jsp">UPDATE</a></button>
-    <button type="submit" class="button button1" name="submit" onclick="document.getElementById('id01').style.display='block'"><a href="#">DELETE</a></button>
+    <button onclick="document.getElementById('id01').style.display='block'">DELETE</button>
 
     <div id="id01" class="modal">
         <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
         <form class="modal-content" action="/action_page.php">
             <div class="container">
-                <h1 align="center">Delete Account</h1>
-                <p align="center">Are you sure you want to delete your account?</p>
+                <h1>Delete Account</h1>
+                <p>Are you sure you want to delete your account?</p>
 
-                <div class="clearfix" align="center">
-                    <button type="button" class="deletebtn">Yes</button>
-                    <button type="button" class="cancelbtn">No</button>
+                <div class="clearfix">
+                    <button type="button" class="deletebtn">Delete</button>
+                    <button type="button" class="cancelbtn">Cancel</button>
                 </div>
             </div>
         </form>
     </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 </div>
 </body>
 </html>

@@ -13,201 +13,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="landlord-viewProfile.css">
     <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
-    <style>
-        *{
-            box-sizing: border-box;
-        }
-        .navbar {
-            overflow: hidden;
-            background-color: white;
-            font-family: Verdana,sans-serif;
-        }
-
-        .navbar a {
-            float: right;
-            font-size: 16px;
-            color: black;
-            text-align: center;
-            padding: 16px 16px;
-            text-decoration: none;
-        }
-        .navbar p {
-            float: left;
-            color: black;
-        }
-
-        .dropdown {
-            float: right;
-            overflow: hidden;
-        }
-
-        .dropdown .dropbtn {
-            font-size: 16px;
-            border: none;
-            outline: none;
-            color: black;
-            padding: 16px 16px;
-            background-color: inherit;
-            font-family: Verdana,sans-serif;
-            margin: 0;
-        }
-
-        .navbar a:hover, .dropdown:hover .dropbtn {
-            background-color: pink;
-        }
-        .navbar a.active {
-            background-color: #666;
-            color: white;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-        }
-
-        .dropdown-content a {
-            float: none;
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            text-align: left;
-        }
-
-        .dropdown-content a:hover {
-            background-color: #ddd;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-
-        body {
-            /*background-image: url('img1.jpg');*/
-            background:lightblue;
-            height:auto;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            margin:auto;
-        }
-
-        .container {
-            max-width:auto;
-            position: relative;
-            background: #F9F9F9;
-            padding: 25px;
-            margin:100px 100px;
-            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-            border-radius:0px;
-            font-family: Verdana,sans-serif;
-        }
-        .container::after, .row::after {
-            content: "";
-            clear: both;
-            display: table;
-        }
-        .container h3{
-            text-align:center;
-        }
-
-        .button {
-            background-color:  black;
-            border-radius: 10px;
-            border: none;
-            color: white;
-            padding: 10px 20px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 13px;
-            margin: 10px 2px;
-            cursor: pointer;
-            font-family: Verdana,sans-serif;
-            -webkit-transition-duration: 0.4s;
-            transition-duration: 0.4s;
-            float:right;
-        }
-        .button1:hover {
-            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-        }
-        a{
-            text-decoration:none;
-            color:white;
-        }
-        input[type=text], select, textarea {
-            width: 300px;
-            padding: 12px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            resize: vertical;
-        }
-        input[type=password], select, textarea {
-            width: 300px;
-            padding: 12px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            resize: vertical;
-        }
-
-        label {
-            padding: 12px 12px 12px 0;
-            display: inline-block;
-        }
-
-        .col-25 {
-            float: left;
-            width: 15%;
-            margin-top: 6px;
-        }
-
-        .col-75 {
-            float: left;
-            width:40%;
-            margin-top: 6px;
-        }
-
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-
-        @media screen and (max-width: 600px) {
-            .col-25, .col-75, input[type=submit] {
-                width: 100%;
-                margin-top: 0;
-            }
-        }
-        table, td, th {
-            border: 1px solid #999;
-
-        }
-
-        table {
-            border-collapse: collapse;
-            width: 100%;
-        }
-
-        th{
-            padding: 8px;
-            font-size: 13px;
-        }
-
-        td {
-            padding: 15px;
-            text-align: left;
-        }
-        .hello{
-            width:1%;
-        }
-    </style>
 </head>
 
 <body>
@@ -302,22 +107,35 @@
 
 
     <button type="submit" onclick="myFunction(); return false" class="button button1" name="submit" ><a href="landlord-updateProfile.jsp">UPDATE</a></button>
-    <button type="submit" class="button button1" name="submit" onclick="document.getElementById('id01').style.display='block'"><a href="#">DELETE</a></button>
+    <button onclick="document.getElementById('id01').style.display='block'">DELETE</button>
 
     <div id="id01" class="modal">
         <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
         <form class="modal-content" action="/action_page.php">
             <div class="container">
-                <h1 align="center">Delete Account</h1>
-                <p align="center">Are you sure you want to delete your account?</p>
+                <h1>Delete Account</h1>
+                <p>Are you sure you want to delete your account?</p>
 
-                <div class="clearfix" align="center">
-                    <button type="button" class="deletebtn">Yes</button>
-                    <button type="button" class="cancelbtn">No</button>
+                <div class="clearfix">
+                    <button type="button" class="deletebtn">Delete</button>
+                    <button type="button" class="cancelbtn">Cancel</button>
                 </div>
             </div>
         </form>
     </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
 </div>
 </body>
 </html>

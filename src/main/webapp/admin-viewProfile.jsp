@@ -2,7 +2,7 @@
   Created by IntelliJ IDEA.
   User: wala wala
   Date: 1/2/2022
-  Time: 12:30 AM
+  Time: 6:40 PM
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -11,7 +11,7 @@
 <head>
     <title>HOUSE RENTAL SYSTEM</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="tenant-viewProfile.css">
+    <link rel="stylesheet" href="admin-viewProfile.css">
     <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
 </head>
 
@@ -24,11 +24,11 @@
             <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content">
-            <a href="tenant-createProfile.jsp">CREATE ACCOUNT</a>
-            <a href="tenant-viewProfile.jsp"class="active">VIEW ACCOUNT</a>
+            <a href="admin-createProfile.jsp">CREATE ACCOUNT</a>
+            <a href="admin-viewProfile.jsp"class="active">VIEW ACCOUNT</a>
         </div>
     </div>
-    <a href="tenant-listPayment.jsp">PAYMENT</a>
+    <a href="#">PAYMENT</a>
     <div class="dropdown">
         <button class="dropbtn">BOOKING
             <i class="fa fa-caret-down"></i>
@@ -48,7 +48,7 @@
             <label>USERNAME</label>
         </div>
         <div class="col-75">
-            <label>ZaitulFarhana00</label>
+            <label>M.Kamalluddin</label>
         </div>
     </div>
     <div class="row">
@@ -56,7 +56,7 @@
             <label>PASSWORD</label>
         </div>
         <div class="col-75">
-            <label>Zaitul_0011</label>
+            <label>m.k2121</label>
         </div>
     </div>
 
@@ -65,7 +65,7 @@
             <label>FULL NAME</label>
         </div>
         <div class="col-75">
-            <label>Zaitul Farhana Md Esa</label>
+            <label>MOHD KAMALLUDDIN MOHKTAR</label>
         </div>
     </div>
 
@@ -74,7 +74,7 @@
             <label>EMAIL</label>
         </div>
         <div class="col-75">
-            <label>z.farhana21@gmail.com</label>
+            <label>M.Kamal2344@gmail.com</label>
         </div>
     </div>
 
@@ -83,7 +83,7 @@
             <label>GENDER</label>
         </div>
         <div class="col-75">
-            <label>FEMALE</label>
+            <label>MALE</label>
         </div>
     </div>
 
@@ -92,7 +92,7 @@
             <label>AGE</label>
         </div>
         <div class="col-75">
-            <label>38</label>
+            <label>40</label>
         </div>
     </div>
 
@@ -101,12 +101,12 @@
             <label>PHONE NUMBER</label>
         </div>
         <div class="col-75">
-            <label>0103211234</label>
+            <label>0109876543</label>
         </div>
     </div>
 
 
-    <button type="submit" onclick="myFunction(); return false" class="button button1" name="submit" ><a href="tenant-updateProfile.jsp">UPDATE</a></button>
+    <button type="submit" onclick="myFunction(); return false" class="button button1" name="submit" ><a href="admin-updateProfile.jsp">UPDATE</a></button>
     <button onclick="document.getElementById('id01').style.display='block'">DELETE</button>
 
     <div id="id01" class="modal">
@@ -135,6 +135,8 @@
             }
         }
     </script>
+
+
 </div>
 </body>
 </html>

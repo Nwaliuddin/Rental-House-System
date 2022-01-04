@@ -156,7 +156,7 @@
 
 <div class="column">
     <div class="container2">
-        <a href="admin-listlandlord.jsp">
+        <a href="admin-createProfile.jsp">
             <h3>ADMIN</h3>
         </a>
     </div>

@@ -38,7 +38,6 @@
             <a href="tenant-listBooking.jsp">LIST BOOKING</a>
         </div>
     </div>
-    <a href="#" >HOME</a>
 </div>
 
 
